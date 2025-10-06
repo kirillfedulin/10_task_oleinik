@@ -54,20 +54,67 @@ import math
 
 #Puu läbimõõdu arvutamine
 #Kirjuta programm, mis küsib kasutaja käest puu ümbermõõdu ning teatab selle peale puu läbimõõdu.
-#ask = int(input("Write circle: "))
-#diametor = 2*ask
-#L = diametor/3.14
-#print(L)
+#ask = int(input("The wood: "))
+#Dia = ask // 3.14
+#Pikk = Dia*3.14
+#print(Pikk)
 
 
 
 
 
 #Arvutage Pythoni käsureal, kui pikk on ristkülikukujulise maatüki diagonaal, mille mõõtmed on Nm x Mm. N ja M küsi kasutajalt
-#N = int(input("Enter first num: "))
-#M = int(input("Enter second num: "))
-#D = math.isqrt(N*N + M*M)
-#print(D)
+#N = float(input("Enter first num: "))
+#M = float(input("Enter second num: "))
+#D = math.sqrt(N*N + M*M)
+#print(round(D, 2))
+
+
+#Leidke järgnevast näiteprogrammist loogiline viga:
+#aeg = float(input("Mitu tundi kulus sõiduks? "))
+#teepikkus = float(input("Mitu kilomeetrit sõitsid? "))
+#kiirus = teepikkus / aeg 
+#print("Sinu kiirus oli " + str(kiirus) + " km/h")
+#Ответ: Время делеться на растояние (ошибка)
 
 
 
+#Koostada programm, mis arvutab aritmeetilise keskmise suvalisest etteantud 5 täis arvust.
+#Leia nende arvude summa, jagatuna kasutaja poolt sisestatud arvuga, täisarvuline osa ja jääk.
+#nums = list(map(float, input("Введите 5 чисел через пробел: ").split()))
+#total = sum(nums)
+#total2 = total / len(nums)
+#print(total2)
+
+
+#Joonista samasugune konn
+#Head = "@..@"
+#print('  ' + Head)
+#Neck = '(----)'
+#print(' ' + Neck)
+#Body = '( \__/ )'
+#print('' + Body)
+#Legs = '^^ "" ^^  '
+#print(Legs)
+
+
+#Arvutame kolmnurga ümbermõõdu. Loo kolm täisarvulist muutujat a, b, c. Kasuta valem, mis arvutab kolmnurga ümbermõõdu (P=a+b+c)
+#a = int(input("First num: "))
+#b = int(input("Second num: "))
+#c = int(input("End num: "))
+#P = a + b + c
+#print(P)
+
+
+
+#Pitsa
+#Võtsite sõpradega (näiteks P inimest) suure pitsa, mille hind on 12,90 €.
+#Jätate teenindajale 10% jootraha.
+#Koosta programm, mis arvutab, kui palju igaüks peab maksma.
+
+#ask = int(input("How much people: "))
+#pizza = 12.90
+#prots = pizza * 0.10
+#end_price = pizza + prots
+#half = end_price / ask
+#print(f'U need to pay {half:.2f}')
